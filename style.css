@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "sans-seriff";
+  font-size: 1rem;
+  line-height: 1.5;
+  height: 100%;git config --list --local
+}
+
+nav,
+header {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  min-width: auto;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+nav .container {
+  height: 5em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.burger {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  /* height is a percentage only works if parent body has a defined height */
+  /* so even if body:100% and header:40% the backend still compute as auto */
+  /* you can set header to position:absolute but that will mess everything up */
+  /* height: 70%; */
+  max-height: auto;
+  min-height: 40vh;
+}
+
+header .container {
+  height: 100%;
+  align-items: center;
+}
+
+.bigwords {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.bigwords_sub {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  max-width: 50%;
+  min-width: 5vw;
+  max-height: 200px;
+  min-height: auto;
+}
+
+button {
+  background-color: #3882f6;
+  font-size: 18px;
+  color: #f9faf8;
+  width: 100px;
+  height: 1.5em;
+  border-radius: 15px;
+  border-style: none;
+}
+
+.leftblockbigwords {
+  margin-bottom: 5px;
+}
+
+section {
+  padding: 5% 0;
+  max-height: 50vh;
+  min-height: 40vh;
+  height: 100%;
+  /* height: 40vh; */
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section div.container {
+  gap: 20px;
+}
+
+.force_width_height {
+  width: 15vw;
+  height: 10vw;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #3882f6;
+}
+
+section.container div.container div p {
+  text-align: center;
+  width: 15vw;
+  height: auto;
+}
+
+.quote {
+  background: #e5e7e8;
+}
+
+section.quote .container {
+  max-height: 50vh;
+  min-height: 40vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 36px;
+  color: #1f2937;
+}
+
+section.quote div.container p:last-child {
+  max-width: 1200px;
+  min-width: 100%;
+  text-align: end;
+  font-weight: bolder;
+  /* color: #1f2937; */
+}
+
+.call {
+  max-height: auto;
+  min-height: 20vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3882f6;
+  border-radius: 15px;
+}
+
+.call div p:nth-child(1) {
+  color: #f9faf8;
+  font-size: 24px;
+}
+.call div p:last-child {
+  color: rgb(182, 181, 181, 0.8);
+  /* font-size: 24px; */
+}
+.call button {
+  border-style: solid;
+  border-color: #f9faf8;
+}
+
+footer {
+  /* max-width: 1200px;
+  min-width: auto; */
+  height: 10vh;
+  background-color: #1f2937;
+}
+
+footer p {
+  /* position: relative; */
+  padding-top: 2%;
+  max-width: 1200px;
+  min-width: auto;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  /* margin: 0 auto; */
+  color: #f9faf8;
+}
